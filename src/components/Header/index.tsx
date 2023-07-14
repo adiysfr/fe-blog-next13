@@ -1,5 +1,5 @@
 'use client'
-import React,{ useState } from 'react'
+import React,{ useState, useEffect } from 'react'
 import Link from 'next/link'
 import ToogleDark from '@/components/ToogleDark'
 import {
@@ -15,8 +15,11 @@ const Header = () => {
   const menuCloseAny = () =>{
     setIsOpen(false)
   }
-  // for handle close menu mobile if any click place
-  document.body.addEventListener('click', menuCloseAny, true); 
+  useEffect(() => {
+    // for handle close menu mobile if any click place
+    document.body.addEventListener('click', menuCloseAny, true); 
+  }, [])
+  
 
   return (
     <header className='bg-[#0c76c159] backdrop-blur-sm'>

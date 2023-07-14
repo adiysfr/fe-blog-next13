@@ -16,24 +16,26 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // const { Meta } = Card;
-const CardComponent = () => {
+
+
+const CardComponent = (data:any) => {
+  const datas = data.data;
   return (
     <div className='container mx-auto py-8'>
       <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-5 md:px-0'>
-        {data.data.map((item, idx) => (
+        {datas.map((item:any, idx:number) => (
           <Card className='bg-center bg-no-repeat bg-cover' key={idx+1}>
             <CardHeader className='p-0 md:mb-5'>
               <div className='overflow-hidden h-44 md:h-52 '>
-                <img className='hover:scale-110 duration-300 h-52 object-center object-cover w-full' src={item.imgUrl} alt="Picture of the author"/>
+                <img className='hover:scale-110 duration-300 h-52 object-center object-cover w-full' src={item.url} alt="Picture of the author"/>
               </div>
             </CardHeader>
             <CardContent className='p-3'>
               <p className='font-bold'>{item.title}</p>
-              <p>{item.desc}</p>
             </CardContent>
             <CardFooter className='p-3'>
               {/* <Button><Link href={`/blog/${idx+1}`}>Detail</Link></Button> */}
-              <Link href={`/blog/${idx+1}`} className={buttonVariants({ variant: "outline" })}>Read More</Link>
+              <Link href={`/blog/${item.id}`} className={buttonVariants({ variant: "outline" })}>Read More</Link>
             </CardFooter>
           </Card>
         ))}
