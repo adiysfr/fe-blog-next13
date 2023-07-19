@@ -7,7 +7,6 @@ import 'swiper/css';
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import data from './data.json'
-import { Button } from '../ui/button';
 import { buttonVariants } from "@/components/ui/button"
 import Link from 'next/link'
 

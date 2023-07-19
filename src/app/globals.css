@@ -76,3 +76,33 @@
     @apply bg-background text-foreground;
   }
 }
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.17em;
+}
+ol{
+  padding-left: 1.5em;
+  list-style-type: decimal;
+}
+/* ul{
+  padding-left: 1.5em;
+  list-style-type: disc;
+} */
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+blockquote{
+  border-left: 4px solid #ccc;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 16px;
+}
+.ql-align-center{
+  text-align: center;
+}

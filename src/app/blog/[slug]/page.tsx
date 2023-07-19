@@ -1,8 +1,22 @@
 import React from 'react'
+import ArticleDetailComponent from '@/components/ArticleDetailComponent';
+import Breadcrumb from '@/components/Breadcrumb'
 
-const Detail = () => {
+
+export const metadata = {
+  title: 'Blog Detail',
+  description: 'Welcome to my blog',
+}
+
+const Detail = ({ params }: { params: { slug: string } }) => {
+  let breadcrumb =[
+    "Blog","/","Detail"
+  ]
   return (
-    <div>Detail</div>
+    <div>
+      <Breadcrumb data={breadcrumb} />
+      <ArticleDetailComponent query={params.slug}/>
+    </div>
   )
 }
 

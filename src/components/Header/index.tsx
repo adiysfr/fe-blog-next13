@@ -31,7 +31,7 @@ const Header = () => {
           </div>
           <ul className="hidden flex-row gap-10 md:flex	items-center">
             <li><Link className='p-3 hover:ring-2 hover:ring-blue-500 duration-300 rounded-lg' href='/'>Home</Link></li>
-            <li><Link className='p-3 hover:ring-2 hover:ring-blue-500 duration-300 rounded-lg' href='/'>Categories</Link></li>
+            <li><Link className='p-3 hover:ring-2 hover:ring-blue-500 duration-300 rounded-lg' href='/blog'>Blog</Link></li>
             <li><Link className='p-3 hover:ring-2 hover:ring-blue-500 duration-300 rounded-lg' href='/profile'>Profile</Link></li>
             <li><Link className='p-3 hover:ring-2 hover:ring-blue-500 duration-300 rounded-lg' href='/project'>Project</Link></li>
             <li><ToogleDark/> </li>
@@ -42,17 +42,16 @@ const Header = () => {
               <ToogleDark/>
             </div>
             <Sheet open={isOpen}>
-              {/* <SheetTrigger onChange={()=>{setIsOpen(true)}}>☰</SheetTrigger> */}
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle>
                     <ul className="flex flex-col gap-10">
                       <li onClick={()=>{setIsOpen(false)}}><Link href='/'>Home</Link></li>
+                      <li onClick={()=>{setIsOpen(false)}}><Link href='/blog'>Blog</Link></li>
                       <li onClick={()=>{setIsOpen(false)}}><Link href='/profile'>Profile</Link></li>
                       <li onClick={()=>{setIsOpen(false)}}><Link href='/project'>Project</Link></li>
                     </ul>
                   </SheetTitle>
-                  {/* <SheetDescription></SheetDescription> */}
                 </SheetHeader>
               </SheetContent>
             </Sheet>
