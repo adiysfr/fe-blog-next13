@@ -7,10 +7,6 @@ import CardComponent from '@/components/CardComponent'
 import HeroBanner from '@/components/HeroBanner'
 import Breadcrumb from '@/components/Breadcrumb'
 
-export const metadata: Metadata = {
-  title: 'Home Page',
-  description: 'Welcome to my blog',
-}
 
 const home = () => {
   let breadcrumb =[

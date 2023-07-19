@@ -3,10 +3,6 @@ import React, { Suspense, useState } from 'react'
 import CardComponent from '@/components/CardComponent'
 import Breadcrumb from '@/components/Breadcrumb'
 
-export const metadata = {
-  title: 'Blog',
-}
-
 export default function Blog ()  {
   let breadcrumb =[
     "Blog"
