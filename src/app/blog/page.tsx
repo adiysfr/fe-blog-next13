@@ -13,11 +13,6 @@ export default function Blog ()  {
       <Breadcrumb data={breadcrumb} />
       <Suspense fallback={<div>Loading...</div>}>
         <CardComponent limit={limit}/>
-        {/* <ul className='flex flex-row gap-10'>
-          <li className='cursor-pointer' onClick={()=>setPage(1)}>1</li>
-          <li className='cursor-pointer' onClick={()=>setPage(2)}>2</li>
-          <li className='cursor-pointer' onClick={()=>setPage(3)}>3</li>
-        </ul> */}
       </Suspense>
     </div>
   )
