@@ -15,11 +15,10 @@ export default function page() {
       [{ align: '' }, { align: 'center' }, { align: 'right' }, { align: 'justify' }]
     ],
   }
-  const formats = [ 'header', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'indent', 'link', 'image', 'align' ]
-  const [value, setValue] = useState('');
+  // const [value, setValue] = useState('');
   return (
   <div>
-    <ReactQuill modules={modules} theme="snow" value={value} onChange={setValue} />
+    {/* <ReactQuill modules={modules} theme="snow" value={value} onChange={setValue} /> */}
   </div>
   )
 }

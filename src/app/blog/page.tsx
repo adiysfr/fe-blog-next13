@@ -11,7 +11,7 @@ export default function Blog ()  {
   let breadcrumb =[
     "Blog"
   ]
-  let limit = 8
+  let limit = '8'
   return (
     <div>
       <Breadcrumb data={breadcrumb} />

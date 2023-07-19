@@ -27,8 +27,8 @@ export default function ArticleDetailComponent({query}:Props) {
         <img className='mx-auto' src={dataVal?.url} alt={dataVal?.title}/>
         <h1><strong>{dataVal?.title}</strong></h1>
         <h3>Categrory : {dataVal?.category_name}</h3>
-        <p>Dibuat pada: {moment(dataVal?.createdAt).format("dddd, Do MMMM YYYY | h:mm:ss")}</p>
-        {/* <span>{dataVal?.createdAt}</span> */}
+        {/* <p>Dibuat pada: {moment(dataVal?.createdAt).format("dddd, Do MMMM YYYY | h:mm:ss")}</p> */}
+        <span>{dataVal?.createdAt}</span>
       </div>
 
       <div>

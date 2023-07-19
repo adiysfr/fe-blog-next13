@@ -24,12 +24,11 @@ const fetcher = (url:string) =>
     .then((res) => res.data);
 
 interface Props{
-  page: string,
   limit: string
 }
 
 
-const CardComponent = ({page, limit}:Props) => {
+const CardComponent = ({limit}:Props) => {
   const [currentPage, setCurrentPage] = useState(1);
   const { data, error } = useSWR(
     [`${process.env.NEXT_PUBLIC_API_URL}/article/pagination?page=${currentPage}&limit=${limit}`,],

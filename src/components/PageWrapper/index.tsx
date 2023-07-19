@@ -1,8 +1,11 @@
 import React from 'react'
 import { motion, AnimatePresence  } from "framer-motion"
 
+interface Props{
+  children: any
+}
 
-export default function PageWrapper({children}) {
+export default function PageWrapper({children}:Props) {
   return (
     <AnimatePresence>
       <motion.div

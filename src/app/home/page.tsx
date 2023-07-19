@@ -16,7 +16,7 @@ const home = () => {
   let breadcrumb =[
     "Home"
   ]
-  let limit = 6
+  let limit = "6"
   return (
     <div>
       <HeroBanner/>
