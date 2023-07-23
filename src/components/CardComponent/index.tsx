@@ -46,7 +46,7 @@ const CardComponent = ({limit}:Props) => {
           <Card className='bg-center bg-no-repeat bg-cover'>
             <CardHeader className='p-0 md:mb-5'>
               <div className='overflow-hidden h-44 md:h-52 '>
-                <img className='hover:scale-110 duration-300 h-52 object-center object-cover w-full' src={item?.url} alt="Picture of the author"/>
+                <img className='hover:scale-110 duration-300 h-52 object-center object-cover w-full' src={item?.poster_url} alt="Picture of the author"/>
               </div>
             </CardHeader>
             <CardContent className='p-3'>
